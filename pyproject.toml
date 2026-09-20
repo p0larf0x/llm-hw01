@@ -1,0 +1,33 @@
+[project]
+name = "llm-hw01"
+version = "0.1.0"
+description = "Первое домашнее задание на курсе  llm инженер"
+readme = "README.md"
+authors = [
+    { name = "Dyagilev Vadim", email = "pscdvl@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets",
+    "gensim",
+    "scikit-learn",
+    "pandas",
+    "matplotlib",
+    "kagglehub",
+    "nltk",
+    "pymorphy3",
+    "numpy>=2.5.2",
+]
+
+[project.scripts]
+llm-hw01 = "llm_hw01:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel==7.3.0",
+    "jupyter==1.1.1",
+]
